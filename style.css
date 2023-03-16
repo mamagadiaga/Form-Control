@@ -1,0 +1,69 @@
+.bg{
+    background-image: linear-gradient( hsla(0, 98%, 68%, 0.541) , hsla(0, 100%, 68%, 0.658) ), url('./images/bg-intro-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bouton{
+    background-color:  hsl(248, 32%, 49%) !important;
+    height: 50px;
+}
+.title{
+    font-size: 45px;
+}
+input{
+    height: 50px;
+}
+input::placeholder{
+    color: rgba(177, 181, 184, 0.568) !important;
+}
+input:focus{
+    box-shadow: none !important;
+    /* border: 1px solid hsl(154, 59%, 51%) !important; */
+}
+
+/* input:invalid{
+    border: 1px solid hsl(0, 100%, 74%) !important;
+} */
+
+
+
+.bouton2{
+    background-color:  hsl(154, 59%, 51%)!important;
+    height: 50px;
+}
+.conditions{
+    font-size: 14px;
+}
+.condition{
+    color: hsl(0, 100%, 74%);
+}
+
+
+ /* Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution {
+    font-size: 14px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width:1225px) {
+    .bouton{
+        height: 60px;
+    }
+}
+
+
+
+.username input[type="text"]{
+    position: relative;
+
+}
+.input-icons i {
+    position: absolute;
+}
+ 

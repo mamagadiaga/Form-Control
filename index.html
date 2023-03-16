@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+  crossorigin="anonymous" />
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body class="bg">
+  <div class="container text-white p-5">       
+    <div class="row">
+        <div class="col-md-5 me-5 d-flex justify-content-center align-items-start flex-column">
+            <h1 class="title fw-bold">Apprendre à coder en regardant les autres</h1>
+            <p>             
+                Découvrez comment des développeurs expérimentés résolvent des problèmes en temps réel. Regarder des tutoriels scénarisés est super,
+                mais comprendre comment les développeurs pensent est inestimable.
+            </p>
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="btn shadow text-white w-100 bouton "><span class="fw-bold">Essayez-le gratuitement pendant 7 jours</span> puis 20 $/mois </button>
+          <form class="mt-4 bg-white text-secondary p-4 rounded-3 shadow" id="formulaire" autocomplete="off" onsubmit="return false">
+            <div class="mb-2">
+              <label for="exampleFormControlInput1" class="form-label">Prenom</label>
+              <div class="input-icons  d-flex justify-content-end align-items-center">
+                <i class="fas fa-exclamation-circle text-danger me-3" style="visibility:hidden" id="icone1"></i>
+                <input class="input-field form-control" id="exampleFormControlInput1" placeholder="Mama" type="text">
+              </div>
+              <p id="erreur1" class="text-danger text-end"></p>
+            </div>
+            <div class="mb-2">
+              <label for="exampleFormControlInput2" class="form-label">Nom</label>
+              <div class="input-icons  d-flex justify-content-end align-items-center">
+                <i class="fas fa-exclamation-circle text-danger me-3" style="visibility:hidden" id="icone2"></i>
+                <input class="input-field form-control" id="exampleFormControlInput2" placeholder="Gadiaga" type="text">
+              </div>
+              <p id="erreur2" class="text-danger text-end"></p>
+            </div>
+            <div class="mb-2">
+              <label for="exampleFormControlInput3" class="form-label">Adresse Email</label>
+              <div class="input-icons  d-flex justify-content-end align-items-center">
+                <i class="fas fa-exclamation-circle text-danger me-3" style="visibility:hidden" id="icone3"></i>
+                <input class="input-field form-control" id="exampleFormControlInput3" placeholder="mama670@example.com" type="email">
+              </div>
+              <p id="erreur3" class="text-danger text-end"></p>
+            </div>
+            <div class="mb-2">
+              <!-- <div class="input-group mb-3">
+                <input type="password" class="form-control rounded-0" id="exampleFormControlInput4" placeholder="MAma6700">
+                <button class="btn rounded-0" style="visibility:hidden" type="button" id="icone"><i class="fas fa-exclamation-circle text-danger"></i></button>
+              </div> -->      
+              <label for="exampleFormControlInput3" class="form-label">Mot de passe</label>    
+              <div class="input-icons  d-flex justify-content-end align-items-center">
+                <i class="fas fa-exclamation-circle text-danger me-3" style="visibility:hidden" id="icone4"></i>
+                <input class="input-field form-control" id="exampleFormControlInput4" placeholder="MAma6700" type="password">
+              </div>
+              <p id="erreur4" class="text-danger text-end"></p>
+            </div>
+            <button type="submit" class="btn btn-success w-100 bouton2 shadow fw-bold" id="btnsubmit"> Demandez votre essai gratuit</button>
+            <p class="conditions mt-3">En cliquant sur le bouton, vous acceptez nos <span class="condition">Conditions et Services</span></p>
+          </form>
+        </div>
+    </div>
+</div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge de <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coder par <a href="#">Mama GDG</a>.
+    </p>
+  </footer>
+
+
+
+
+  <script src="./index.js"></script>
+
+  <script
+      src="https://kit.fontawesome.com/712d58e84c.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"></script>
+</body>
+</html>
